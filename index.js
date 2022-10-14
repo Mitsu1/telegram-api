@@ -3,7 +3,7 @@ const app = express()
 
 const config = require('./config')
 
-app.get('/telegram',(request, response)=>{
+app.post('/telegram',(request, response)=>{
     console.log(request.body)
     response.send('ok')
 })
